@@ -1,0 +1,12 @@
+# macOS
+.DS_Store
+
+# SQLite DB files
+*.db
+
+# Python cache (future automation)
+__pycache__/
+*.pyc
+
+# Node (not used here, safe default)
+node_modules/
