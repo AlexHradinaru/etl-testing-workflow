@@ -12,7 +12,22 @@ Goal: Recreate a realistic data QA workflow — from raw marketing data to clean
 - Focused on metrics such as CTR, CPC, Conversion Rate, and campaign performance by platform.
 
 ---
-
+## 📂 Folder Structure
+```
+etl-testing-workflow/
+├─ data/
+│  ├─ campaign_raw.csv
+│  └─ campaign_qa_passed.csv
+├─ sql/
+│  ├─ 01_check_missing_values.sql
+│  ├─ 02_fix_missing_values.sql
+│  ├─ 03_flag_suspicious_rows.sql
+│  ├─ 04_summary_report.sql
+│  └─ 05_create_qa_passed_view.sql
+├─ tableau/
+│  └─ dashboard_screenshot.png
+└─ readme.md
+```
 ## ⚙️ Workflow
 1. **Data Preparation**  
    - Used a synthetic dataset (`data/campaign_raw.csv`) with duplicates, missing values, and inconsistent formats.  
@@ -52,23 +67,6 @@ Goal: Recreate a realistic data QA workflow — from raw marketing data to clean
 - **Git / GitHub** for version control  
 
 ---
-
-## 📂 Folder Structure
-```
-etl-testing-workflow/
-├─ data/
-│  ├─ campaign_raw.csv
-│  └─ campaign_qa_passed.csv
-├─ sql/
-│  ├─ 01_check_missing_values.sql
-│  ├─ 02_fix_missing_values.sql
-│  ├─ 03_flag_suspicious_rows.sql
-│  ├─ 04_summary_report.sql
-│  └─ 05_create_qa_passed_view.sql
-├─ tableau/
-│  └─ dashboard_screenshot.png
-└─ readme.md
-```
 
 ## 🧾 Next Steps
 - Automate ETL + QA using dbt or Python scripts.  
